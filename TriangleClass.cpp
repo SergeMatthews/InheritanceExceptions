@@ -3,12 +3,12 @@
 
 
 Triangle::Triangle(int length_a, int length_b, int length_c, int angle_A, int  angle_B, int angle_C)
-    : Figure("Треугольник", 3),
+    : Figure("РўСЂРµСѓРіРѕР»СЊРЅРёРє", 3),
     length_a(length_a), length_b(length_b), length_c(length_c),
     angle_A(angle_A), angle_B(angle_B), angle_C(angle_C)
 {
     if (180 != (angle_A + angle_B + angle_C))
-        throw creation_error("Ошибка создания фигуры. Причина: сумма углов не равна 180");
+        throw creation_error("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹. РџСЂРёС‡РёРЅР°: СЃСѓРјРјР° СѓРіР»РѕРІ РЅРµ СЂР°РІРЅР° 180");
 }
 int Triangle::GetLength_a() {
     return length_a;

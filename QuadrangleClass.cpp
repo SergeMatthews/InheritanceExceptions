@@ -2,12 +2,12 @@
 #include "CreationErrorClass.h"
 
 Quadrangle::Quadrangle(int length_a, int length_b, int length_c, int length_d,
-    int angle_A, int angle_B, int angle_C, int angle_D) : Figure("Четырёхугольник", 4),
+    int angle_A, int angle_B, int angle_C, int angle_D) : Figure("Р§РµС‚С‹СЂС‘С…СѓРіРѕР»СЊРЅРёРє", 4),
     length_a(length_a), length_b(length_b), length_c(length_c), length_d(length_d),
     angle_A(angle_A), angle_B(angle_B), angle_C(angle_C), angle_D(angle_D)
 {
     if (360 != (angle_A + angle_B + angle_C + angle_D))
-        throw creation_error("Ошибка создания фигуры. Причина: сумма углов не равна 360");
+        throw creation_error("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹. РџСЂРёС‡РёРЅР°: СЃСѓРјРјР° СѓРіР»РѕРІ РЅРµ СЂР°РІРЅР° 360");
 }
 int Quadrangle::GetLength_a() {
     return length_a;

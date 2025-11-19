@@ -4,7 +4,7 @@
 
 Figure::Figure(std::string figureName, int sidesNumber) : figureName(figureName), sidesNumber(sidesNumber)
 {}
-Figure::Figure() : Figure("Ôèãóğà", 0)
+Figure::Figure() : Figure("Ğ¤Ğ¸Ğ³ÑƒÑ€Ğ°", 0)
 {}
 std::string Figure::GetFigureName() {
     return figureName;

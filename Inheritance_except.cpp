@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 
 #include "FigureClass.h"
@@ -58,6 +58,13 @@ int main()
     try {
         Parallelogram parObj2(30, 15, 70, 110);
         PrintInfo(&parObj2);
+    }
+    catch (const creation_error& ex) {
+        cerr << ex.what() << endl;
+    }
+    try {
+        RightTriangle rTriObj2(10, 15, 30, 50, 30);
+        PrintInfo(&rTriObj2);
     }
     catch (const creation_error& ex) {
         cerr << ex.what() << endl;
